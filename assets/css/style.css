@@ -628,6 +628,7 @@ padding: 20px;
   border-radius: 12px;
   box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.07);
   margin-top: 17px;
+  width: 600px;
 }
 .service-badge-wrapper .btn{
 background-color: #0B68DB!important;
@@ -787,7 +788,9 @@ background: radial-gradient(43.08% 5800% at 50% 50%, #2F66F5 0%, #FFF 100%)
   .label-data .form-control,.label-data-one .form-control,.data-select{
     width: 329px!important;
   }
-  
+  .service-badge-wrapper{
+    width: 100%!important;
+  }
 }
 @media screen and (max-width: 1200px) {
   .label-data .form-control,.label-data-one .form-control,.data-select{
