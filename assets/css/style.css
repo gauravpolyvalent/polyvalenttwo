@@ -237,6 +237,9 @@ font-weight: 600!important;
 }
 /*why section end*/
 /* service section start */
+.service-left .heading-line{
+  text-align: justify;
+}
 .workspace-wrapper {
   width: 200px;
   height: 161px;
@@ -611,7 +614,7 @@ background-clip: text;
 }
 .service-left .our-work-subwrapper{
   width: 588px;
- height: 100%;
+ /* height: 100%; */
 }
 .service-right{
 padding: 20px;
