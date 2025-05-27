@@ -328,6 +328,12 @@ font-weight: 600!important;
 .client-wrapper .slick-initialized .slick-slide {
   margin: 10px;
 }
+.client-section .portfolio-wrapper .slick-initialized .slick-slide {
+  height: 300px!important;
+}
+.client-subwrapper .portfolio-content h5{
+  font-size: 17px!important;
+}
 .portfolio-wrapper .slick-prev,
 .portfolio-wrapper .slick-next ,
 .client-wrapper .slick-prev,
@@ -843,6 +849,9 @@ background: radial-gradient(43.08% 5800% at 50% 50%, #2F66F5 0%, #FFF 100%)
 
 }
 @media screen and (max-width: 768px) {
+  .client-wrapper .slick-initialized .slick-slide {
+  height: 100%!important;
+}
   .portfolio-subwrapper .slick-slide > div{
     width: 100%!important;
   }
