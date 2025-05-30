@@ -19,33 +19,7 @@
 
 <body>
     <!-- nav section start "-->
-    <nav class="navbar-header container">
-      <div class="img-logo">
-          <a href="index.html">
-              <img src="assets/images/polyvalent 1.png" alt="current-data" />
-          </a>
-      </div>
-      <ul class="list-wrapper">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="aboutus.html">About Us</a></li>
-          <li><a href="work.html">Work</a></li>
-          <li><a href="service.html">Services</a></li>
-           <li><a href="blogs.html">Blogs</a></li>
-          <li><a href="contactus.html">Contact Us</a></li>
-      </ul>
-      <div>
-          <a href="tel:+9101245181101" class="shedule-call">
-              SCHEDULE A CALL
-          </a>
-      </div>
-      <div class="burger-menu">
-          <span></span>
-          <span></span>
-          <span></span>
-      </div>
-  </nav>
-
-   
+     <?php include("header.php")?>
     <!-- nav section end -->
         <!-- about us section start -->
          <section class="section-padding aboutus-wrapper  wow animate__animated animate__fadeInDown about-desktop">
