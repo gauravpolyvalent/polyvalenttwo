@@ -1,3 +1,9 @@
+<?php
+include 'db.php';
+
+$sql = "SELECT * FROM poly_blog ORDER BY blog_date DESC"; 
+$result = $conn->query($sql);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,6 +35,33 @@
                     <div class="col-lg-12">
                          <h2 class="gradient-text text-center letter-spacing wow animate__animated animate__fadeInDown" >Our Blogs</h2>    
                     </div>
+                    <?php
+                        if ($result->num_rows > 0) {
+                            while ($row = $result->fetch_assoc()) {
+                                echo '
+                                <div class="col-md-6 mt-4">
+                                   <a href="blogdetail.php?blog_id=' . $row['blog_id'] . '">
+                                        <div class="our-work-wrapper wow animate__animated animate__fadeInDown">
+                                            <div class="our-work-subwrapper">
+                                                <img src="' . $row['image'] . '" alt="Blog Image" class="img-data-one" style="height:350px"/>
+                                                <div class="our-work-content">
+                                                    
+                                                    <h5 class="fw-bold mt-2">' . htmlspecialchars($row['blog_title']) . '</h5>
+                                                    <p class="heading-line mt-2">' . htmlspecialchars($row['meta_desc']) . '</p>
+                                                    <a href="blogdetail.php?blog_id=' . $row['blog_id'] . '" class="btn btn-one w-50 mt-3">Read More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>';
+                            }
+                        } else {
+                            echo '<p>No blogs found.</p>';
+                        }
+
+                        $conn->close();
+                        ?>
+<!-- 
                     <div class="col-md-6 mt-4">
                         <a href="blogdetail.php">
                             
@@ -113,7 +146,7 @@
                             </div>
                             </a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
          </section>

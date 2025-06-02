@@ -1,3 +1,40 @@
+<?php
+include("db.php");
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
+   
+
+    $fname = trim($_POST['name']);
+    $lname = trim($_POST['lname']);
+    $email = trim($_POST['email']);
+    $mobile = trim($_POST['mobile']);
+    $company = trim($_POST['company']);
+    $message = trim($_POST['message']);
+   
+
+    $stmt = $conn->prepare("INSERT INTO lead (`name`, `lname`, `email`, `mobile`, `company`, `message`) VALUES (?, ?, ?, ?, ?, ?)");
+
+    if (!$stmt) {
+        die("Prepare failed: " . $conn->error);
+    }
+
+    $stmt->bind_param("ssssss", $fname, $lname, $email, $mobile, $company, $message);
+
+    if ($stmt->execute()) {
+        echo "<script>alert('Message sent successfully!'); window.location.href='thankyou.php';</script>";
+    } else {
+        die("Execute failed: " . $stmt->error);
+    }
+
+    $stmt->close();
+    $conn->close();
+}
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -47,43 +84,49 @@
                 </div>
                 <div class="col-lg-8 wow animate__animated animate__fadeInDown">
                     <div class="contact-form-wrapper mt-5">
-                         <form>
+                         <form method="post" action="" id="contactForm">
                             <div class="d-flex gap-2 mt-4 label-data">
                                 <div>
                                     <label class="fw-bold">First Name <sup>*</sup></label>
-                                    <input type="text" class="form-control mt-2" placeholder="First Name"/>
+                                    <input type="text" class="form-control mt-2" name="name" placeholder="First Name"/>
+                                    <span class="error text-danger" id="fnameError"></span><br>
                                 </div>
                                 <div>
                                     <label class="fw-bold">Last Name <sup>*</sup></label>
-                                    <input type="text" class="form-control mt-2" placeholder="Last Name"/>
+                                    <input type="text" class="form-control mt-2" name="lname" placeholder="Last Name"/>
+                                    <span class="error text-danger" id="lnameError"></span><br>
                                 </div>
                             </div>
                             
-                            <div class="mt-4">
+                            <div class="mt-2">
                                 <label class="fw-bold">Email <sup>*</sup></label>
-                                <input type="email" class="form-control mt-2" placeholder="Enter your Email"/>
+                                <input type="email" class="form-control mt-2" name="email" placeholder="Enter your Email"/>
+                                <span class="error text-danger" id="emailError"></span><br>
                             </div>
                             <div class="d-flex gap-2 label-data-one">
-                                <div class="mt-4">
+                                <div class="mt-2">
                                     <label class="fw-bold">Phone No <sup>*</sup></label>
-                                    <input type="text" class="form-control mt-2" placeholder="Enter your Number"/>
+                                    <input type="text" class="form-control mt-2" name="mobile" placeholder="Enter your Number"/>
+                                    <span class="error text-danger" id="phoneError"></span><br>
                                 </div>
-                                <div class="mt-4">
+                                <div class="mt-2">
                                     <label class="fw-bold">What's the type of your company? <sup>*</sup></label>
-                                    <select class="form-select data-select">
+                                    <select class="form-select data-select" name="company">
                                         <option>Product Company</option>
                                         <option>Service Company</option>
                                     </select>
+                                    
                                 </div>
                             </div>
                             
-                            <div class="mt-4">
+                            <div class="mt-2">
                                 <label class="fw-bold">Message <sup>*</sup></label>
-                                <textarea class="form-control mt-2" placeholder="Type Your Message...." rows="5" cols="5">
+                                <textarea class="form-control mt-2" placeholder="Type Your Message...." rows="3" name="message">
                                 </textarea>
+                                <span class="error text-danger" id="messageError"></span><br>
                             </div>
                             <div class="">
-                                <a href="#" class="btn btn-primary w-100 text-white mt-4">Submit</a>
+                                <button type="submit" name="submit" class="btn btn-primary w-100 text-white mt-4" id="submitBtn">Submit</a>
                             </div>
                          </form>   
                     </div>
@@ -150,6 +193,63 @@
     <script>
       new WOW().init(); // initialize WOW
 </script>
+<script>
+
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+    const form = e.target;
+
+    const fname = form.querySelector("input[name='name']");
+    const lname = form.querySelector("input[name='lname']");
+    const email = form.querySelector("input[name='email']");
+    const mobile = form.querySelector("input[name='mobile']");
+    const message = form.querySelector("textarea[name='message']");
+
+    const fnameError = document.getElementById("fnameError");
+    const lnameError = document.getElementById("lnameError");
+    const emailError = document.getElementById("emailError");
+    const phoneError = document.getElementById("phoneError");
+    const messageError = document.getElementById("messageError");
+
+    let isValid = true;
+
+    // Clear errors
+    fnameError.textContent = "";
+    lnameError.textContent = "";
+    emailError.textContent = "";
+    phoneError.textContent = "";
+    messageError.textContent = "";
+
+    // Validate fields
+    if (!fname.value.trim()) {
+        fnameError.textContent = "First name is required.";
+        isValid = false;
+    }
+    if (!lname.value.trim()) {
+        lnameError.textContent = "Last name is required.";
+        isValid = false;
+    }
+    if (!email.value.trim() || !/^\S+@\S+\.\S+$/.test(email.value)) {
+        emailError.textContent = "A valid email is required.";
+        isValid = false;
+    }
+    if (!mobile.value.trim() || !/^\d{10}$/.test(mobile.value)) {
+        phoneError.textContent = "A valid 10-digit phone number is required.";
+        isValid = false;
+    }
+    if (!message.value.trim()) {
+        messageError.textContent = "Message is required.";
+        isValid = false;
+    }
+
+    if (!isValid) {
+        e.preventDefault();
+    }
+});
+
+
+
+</script>
+
 </body>
 
 </html>

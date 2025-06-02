@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -140,14 +141,14 @@
                         </div>
                         
                         <div class="btn-wrappers wow animate__animated animate__fadeInDown">
-                            <a href="work.html" class="btn btn-primary rounded text-white">Let’s Work Together</a>
+                            <a href="blog.php" class="btn btn-primary rounded text-white">Let’s Work Together</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="row">
                         <div class="col-lg-12">
-                            <a href="work.html" class="mt-3">
+                            <a href="blog.php" class="mt-3">
                                 <div class="robot-data">
                                     <div>
                                         <h3 class="text-white wow animate__animated animate__fadeInDown" style="font-size: 60px;">100+</h3>
@@ -268,7 +269,7 @@
                                 digital experiences
                             </p>
                             <div class="workspace-wrapper">
-                                <a href="service.html">
+                                <a href="service.php">
                                     <img src="assets/images/service1.png" alt="current-data" style="border-radius: 20px;"/>
                                 </a>
                                
@@ -277,7 +278,7 @@
                         </div>
                         <div class="col-lg-7 mt-4">
                             <div class="service-subwrapper">
-                                <a href="service.html">
+                                <a href="service.php">
                                     <div class="sub-services  wow animate__animated animate__fadeInDown">
                                         <div class="service-title">
                                             <h5 class="fw-bold">PPC Advertising</h5>
@@ -303,7 +304,7 @@
                                             focus on measurable results and maximizing return on ad spend.</h5>
                                     </div>
                                 </a>
-                                <a href="service.html">
+                                <a href="service.php">
                                     <div class="sub-services  wow animate__animated animate__fadeInDown">
                                         <div class="service-title">
                                             <h5 class="fw-bold">Online Brand Positioning</h5>
@@ -330,7 +331,7 @@
                                             online visibility.</h5>
                                     </div>
                                 </a>
-                                <a href="service.html">
+                                <a href="service.php">
                                     <div class="sub-services  wow animate__animated animate__fadeInDown">
                                         <div class="service-title">
                                             <h5 class="fw-bold">Website Design & Development</h5>
@@ -357,7 +358,7 @@
                                             user experience.</h5>
                                     </div>
                                 </a>
-                                <a href="service.html">
+                                <a href="service.php">
                                     <div class="sub-services  wow animate__animated animate__fadeInDown">
                                         <div class="service-title">
                                             <h5 class="fw-bold">Brand Promotion & Management</h5>
@@ -395,16 +396,16 @@
     </section>
     <!-- service section end -->
     <!-- portfolio section start -->
-    <section class="section-padding margin-30 section-data pt-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 ">
+    <!-- <section class="section-padding margin-30 section-data pt-2"> -->
+        <!-- <div class="container"> -->
+            <!-- <div class="row"> -->
+                <!-- <div class="col-lg-12 ">
                     <div class="section-title">
                         <span class="fw-bold  wow animate__animated animate__fadeInDown">Our Portofolio</span>
                         <div class="line-border"></div>
                     </div>
-                </div>
-                <div class="col-lg-5">
+                </div> -->
+                <!-- <div class="col-lg-5">
                     <div class="portfolio-title">
                         <h3 class="mt-4  wow animate__animated animate__fadeInDown">
                             Take a look at some of our <span><svg xmlns="http://www.w3.org/2000/svg" width="50"
@@ -416,17 +417,17 @@
                                 </svg></span> latest projects.
                         </h3>
                     </div>
-                </div>
+                </div> -->
                 <!-- slider section start here -->
-                <div class="col-lg-12">
+                <!-- <div class="col-lg-12">
                     <div class="portfolio-wrapper mt-4">
                         <div class="portfolio-slider">
 
                             <div class="portfolio-subwrapper  wow animate__animated animate__fadeInDown">
-                                <a href="workdetail.html">
+                                <a href="workdetail.php">
                                     <img src="assets/images/image.png" alt="current-data" />
                                 <div class="portfolio-content">
-                                    <a href="workdetail.html" class="btn btn-one">Web Design</a>
+                                    <a href="workdetail.php" class="btn btn-one">Web Design</a>
                                     <h5 class="fw-bold mt-2">Rapoo - AI Meeting Platform</h5>
                                     <p class="heading-line mt-2">Intelligent meeting platform that enhances
                                         collaboration through AI-driven solutions. Designed for seamless communication,
@@ -436,10 +437,10 @@
                                 
                             </div>
                             <div class="portfolio-subwrapper  wow animate__animated animate__fadeInDown">
-                                <a href="workdetail.html">
+                                <a href="workdetail.php">
                                 <img src="assets/images/image.png" alt="current-data" />
                                 <div class="portfolio-content">
-                                    <a href="workdetail.htmls" class="btn btn-one">Brand Design</a>
+                                    <a href="workdetail.phps" class="btn btn-one">Brand Design</a>
                                     <h5 class="fw-bold mt-2">Domus AI Home Appliance Logo</h5>
                                     <p class="heading-line mt-2">The logo for Domus AI represents innovation, comfort,
                                         and technology in the home appliance sector. The design combines modern
@@ -449,10 +450,10 @@
                                 </a>
                             </div>
                             <div class="portfolio-subwrapper  wow animate__animated animate__fadeInDown">
-                                <a href="workdetail.html">
+                                <a href="workdetail.php">
                                 <img src="assets/images/image.png" alt="current-data" />
                                 <div class="portfolio-content">
-                                    <a href="workdetail.html" class="btn btn-one">Web Design</a>
+                                    <a href="workdetail.php" class="btn btn-one">Web Design</a>
                                     <h5 class="fw-bold mt-2">Rapoo - AI Meeting Platform</h5>
                                     <p class="heading-line mt-2">Intelligent meeting platform that enhances
                                         collaboration through AI-driven solutions. Designed for seamless communication,
@@ -461,10 +462,10 @@
                                 </a>
                             </div>
                             <div class="portfolio-subwrapper  wow animate__animated animate__fadeInDown">
-                                <a href="workdetail.html">
+                                <a href="workdetail.php">
                                 <img src="assets/images/image.png" alt="current-data" />
                                 <div class="portfolio-content">
-                                    <a href="workdetail.html" class="btn btn-one">Brand Design</a>
+                                    <a href="workdetail.php" class="btn btn-one">Brand Design</a>
                                     <h5 class="fw-bold mt-2">Domus AI Home Appliance Logo</h5>
                                     <p class="heading-line mt-2">The logo for Domus AI represents innovation, comfort,
                                         and technology in the home appliance sector. The design combines modern
@@ -474,10 +475,10 @@
                                 </a>
                             </div>
                             <div class="portfolio-subwrapper  wow animate__animated animate__fadeInDown">
-                                <a href="workdetail.html">
+                                <a href="workdetail.php">
                                 <img src="assets/images/image.png" alt="current-data" />
                                 <div class="portfolio-content">
-                                    <a href="workdetail.html" class="btn btn-one">Web Design</a>
+                                    <a href="workdetail.php" class="btn btn-one">Web Design</a>
                                     <h5 class="fw-bold mt-2">Rapoo - AI Meeting Platform</h5>
                                     <p class="heading-line mt-2">Intelligent meeting platform that enhances
                                         collaboration through AI-driven solutions. Designed for seamless communication,
@@ -487,46 +488,49 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- slider section end here -->
-            </div>
-        </div>
+            <!-- </div> -->
+        <!-- </div> -->
 
-    </section>
+    <!-- </section> -->
     <!-- portfolio section end -->
     <!-- mid section start -->
-   <section class="section-data">
-    <div class="container">
-        <div class="mid-section-wrapper">
-            <div class="mid-subwrapper">
-                <h1 class="text-center text-white mt-4  wow animate__animated animate__fadeInDown mid-shape-one">Looking to enhance your Search Experience?</h1>
-                <p class="text-center text-white mt-2  wow animate__animated animate__fadeInDown">Our digital analysis are looking out for you!</p>
-                <form>
-                    <div class="form-wrapper " style="margin-top: 30px;">
-                        <div>
-                            <input type="text" class="form-control url-data" placeholder="Type in your Website URL" />
-                        </div>
-                        <div>
-                            <input type="text" class="form-control" placeholder="your Email" />
-                        </div>
-
-                    </div>
-                    <div class="btn-mid d-flex justify-content-center mt-4">
-                        <a href="#" class="btn-data-two  wow animate__animated animate__fadeInDown">Get a Free SEO Audit</a>
-                    </div>
-                </form>
+<section class="section-data">
+  <div class="container">
+    <div class="mid-section-wrapper">
+      <div class="mid-subwrapper">
+        <h1 class="text-center text-white mt-4 wow animate__animated animate__fadeInDown mid-shape-one">
+          Looking to enhance your Search Experience?
+        </h1>
+        <p class="text-center text-white mt-2 wow animate__animated animate__fadeInDown">
+          Our digital analysis are looking out for you!
+        </p>
+        <form id="seoAuditForm" onsubmit="return validateSEOForm(event);">
+          <div class="form-wrapper" style="margin-top: 30px;">
+            <div>
+              <input type="text" id="website" class="form-control url-data" placeholder="Type in your Website URL" />
+              <small id="websiteError" style="color: white;"></small>
             </div>
-
-
-        </div>
+            <div class="">
+              <input type="text" id="email" class="form-control" placeholder="Your Email" />
+              <small id="emailError" style="color: white;"></small>
+            </div>
+          </div>
+          <div class="btn-mid d-flex justify-content-center mt-4">
+            <button type="submit" class="btn-data-two wow animate__animated animate__fadeInDown">Get a Free SEO Audit</button>
+          </div>
+        </form>
+      </div>
     </div>
-   </section>  
+  </div>
+</section>
    
 
     <!-- mid section end -->
     <!-- mid section two start -->
-     <section class="section-data">
+     <!-- <section class="section-data">
         <div class="container">
             <div class="mid-section-wrapper-two">
                 <div class="mid-shape">
@@ -536,9 +540,7 @@
     
             </div>
         </div>
-     </section>
- 
-
+     </section> -->
     <!-- mid section two start -->
     <!-- client section start -->
     <section class="section-padding margin-30 section-data client-section pt-3">
@@ -700,7 +702,7 @@
       <h2 class="mt-3  wow animate__animated animate__fadeInDown">Are you ready?</h2>
       <p class="mt-3  wow animate__animated animate__fadeInDown">This could be the start of something big.</p>
       <div class="d-flex justify-content-center mt-3">
-        <a href="#" class="apply-btn  wow animate__animated animate__fadeInDown">Let's Work Together</a>
+        <a href="contactus.php" class="apply-btn  wow animate__animated animate__fadeInDown">Let's Work Together</a>
       </div>
     </div>
   </section>
@@ -758,6 +760,43 @@
     </script>
 <script>
         new WOW().init(); // initialize WOW
+</script>
+<script>
+  function validateSEOForm(event) {
+    event.preventDefault();
+
+    const website = document.getElementById("website").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const websiteError = document.getElementById("websiteError");
+    const emailError = document.getElementById("emailError");
+
+    let isValid = true;
+
+    websiteError.textContent = "";
+    emailError.textContent = "";
+
+    if (website === "") {
+      websiteError.textContent = "Please enter your website URL.";
+      isValid = false;
+    }
+
+    if (email === "") {
+      emailError.textContent = "Please enter your email.";
+      isValid = false;
+    } else {
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(email)) {
+        emailError.textContent = "Please enter a valid email address.";
+        isValid = false;
+      }
+    }
+
+    if (isValid) {
+     window.location.href = "thankyou.php";
+    }
+
+    return false;
+  }
 </script>
 </body>
 
